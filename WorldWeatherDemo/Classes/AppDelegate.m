@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DefaultAssembler.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    DefaultAssembler *assembler = [DefaultAssembler new];
+    [assembler assembleInitialModule];
+    
     // Override point for customization after application launch.
     return YES;
 }
