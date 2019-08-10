@@ -7,11 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ModuleDelegate.h"
 #import "ModuleAssembler.h"
+#import "ModuleAssemblerFactory.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DefaultAssembler : NSObject <ModuleAssembler>
+@interface DefaultAssembler : NSObject
+
+@property (nonatomic, readonly, strong) ModuleAssemblerFactory* factory;
+
+- (void)assembleInitialModule;
+- (void)assembleWithModuleType:(ModuleType)type
+                      objectId:(NSString *)objectId
+                      delegate:(id<ModuleDelegate>)delegate
+                    completion:(void (^)(UIViewController *))completion;
 
 @end
 

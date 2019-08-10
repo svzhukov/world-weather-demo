@@ -12,7 +12,8 @@
 
 - (void)didSelectObjectId:(NSString *)objectId {
     [self.assembler assembleDetailedWeatherWithDelegate:self completion:^(id<DetailedWeatherOutput>  _Nonnull output, id<DetailedWeatherInterface>  _Nonnull interface) {
-        
+        output;
+        interface;
     }];
 }
 

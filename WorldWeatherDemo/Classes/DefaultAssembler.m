@@ -7,32 +7,35 @@
 //
 
 #import "DefaultAssembler.h"
-#import "CountriesListPresenter.h"
-#import "CountriesList.h"
-
-#import "DetailedWeather.h"
-#import "DetailedWeatherPresenter.h"
 
 @implementation DefaultAssembler
 
+- (instancetype)defaultAssembler {
+    static DefaultAssembler *assembler;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        assembler = [DefaultAssembler new];
+    });
+    return self;
+}
+
 - (void)assembleInitialModule {
-    CountriesListPresenter *presenter = [CountriesListPresenter new];
-    CountriesList *interface = (CountriesList *)[self rootVC];
-    presenter.interface = interface;
-    interface.output = presenter;
+    id<ModuleAssembler> assembler = [self.factory assemblerWithModuleType:INITIAL_MODULE];
+    [assembler assembleAsInitialModule];
 }
 
-- (void)assembleDetailedWeather {
+- (void)assembleWithModuleType:(ModuleType)type objectId:(NSString *)objectId delegate:(id<ModuleDelegate>)delegate completion:(void (^)(UIViewController * _Nonnull))completion {
+
+}
+
+- (void)assembleDetailedWeatherWithDelegate:(id<DetailedWeatherDelegate>)delegate completion:(void (^)(id<DetailedWeatherOutput> _Nonnull, id<DetailedWeatherInterface> _Nonnull))completion {
+    
     DetailedWeatherPresenter *presenter = [DetailedWeatherPresenter new];
-    DetailedWeather *interface = [DetailedWeather new];
+    DetailedWeatherViewController *interface = [DetailedWeatherViewController new];
     presenter.interface = interface;
+    presenter.delegate = delegate;
     interface.output = presenter;
-    
-    
-}
-
-- (UIViewController *)rootVC {
-    return [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    completion(presenter, interface);
 }
 
 @end

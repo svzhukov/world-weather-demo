@@ -7,17 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DetailedWeatherInterface.h"
 #import "ModuleAssembler.h"
-#import "DetailedWeatherInterface.h"
 #import "DetailedWeatherOutput.h"
 #import "DetailedWeatherDelegate.h"
+#import "DetailedWeatherViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailedWeatherPresenter : NSObject <DetailedWeatherOutput>
 
-@property (nonatomic, weak) id<DetailedWeatherInterface> interface;
+@property (nonatomic, weak) DetailedWeatherViewController *interface;
 @property (nonatomic, weak) id<ModuleAssembler> assembler;
 @property (nonatomic, weak) id<DetailedWeatherDelegate> delegate;
 

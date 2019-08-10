@@ -9,18 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "DetailedWeatherDelegate.h"
 #import "DetailedWeatherOutput.h"
-#import "DetailedWeatherInterface.h"
+#import "DetailedWeatherViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ModuleAssembler <NSObject>
 
-- (void)assembleInitialModule;
-- (void)assembleDetailedWeatherWithDelegate:(id<DetailedWeatherDelegate>)delegate completion:(void (^)(id<DetailedWeatherOutput> output, id<DetailedWeatherInterface> interface))completion;
+- (void)assembleAsInitialModule
+- (void)assembleDetailedWeatherWithDelegate:(id<DetailedWeatherDelegate>)delegate completion:(void (^)(DetailedWeatherViewController *))completion;
 
 @end
-
-//-(void)unregisterAppOnAmoJoWithSuccess:(void (^)(id data))successBlock
-//failure:(void (^)(NSError *error))failureBlock;
 
 NS_ASSUME_NONNULL_END

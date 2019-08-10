@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CountriesListUIOutput.h"
-#import "CountriesListInterface.h"
 #import "ModuleAssembler.h"
 #import "DetailedWeatherDelegate.h"
+#import "CountriesListTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CountriesListPresenter : NSObject <CountriesListUIOutput, DetailedWeatherDelegate>
 
-@property (nonatomic, weak) id<CountriesListInterface> interface;
+@property (nonatomic, weak) CountriesListTableViewController *interface;
 @property (nonatomic, weak) id<ModuleAssembler> assembler;
 
 @end

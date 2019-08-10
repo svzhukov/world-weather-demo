@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ModuleOutput.h"
+#import "InterfaceOutput.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol CountriesListUIOutput <NSObject, ModuleOutput>
+@protocol CountriesListUIOutput <NSObject, InterfaceOutput>
 
 - (void)didSelectObjectId:(NSString *)objectId;
+
+- (void)presentWithData:(id)data;
 
 @end
 

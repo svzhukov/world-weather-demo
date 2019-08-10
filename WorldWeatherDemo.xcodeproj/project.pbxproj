@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA9BD8AC4055B8F3115FF397 /* libPods-WorldWeatherDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C269AE794428F76BC97F40B7 /* libPods-WorldWeatherDemo.a */; };
-		D957885A22FAA39200BCC0EE /* CountriesList.m in Sources */ = {isa = PBXBuildFile; fileRef = D957885922FAA39200BCC0EE /* CountriesList.m */; };
+		D957885A22FAA39200BCC0EE /* CountriesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D957885922FAA39200BCC0EE /* CountriesListTableViewController.m */; };
 		D957885E22FAAB1700BCC0EE /* CountriesListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D957885D22FAAB1700BCC0EE /* CountriesListPresenter.m */; };
 		D995EDA422FAB223003FA6DD /* DefaultAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D995EDA322FAB223003FA6DD /* DefaultAssembler.m */; };
 		D9BD4F7722FA9CA000B280C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4F7622FA9CA000B280C9 /* AppDelegate.m */; };
@@ -19,8 +19,13 @@
 		D9BD4F8822FA9CA300B280C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4F8722FA9CA300B280C9 /* main.m */; };
 		D9BD4F9222FA9CA300B280C9 /* WorldWeatherDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4F9122FA9CA300B280C9 /* WorldWeatherDemoTests.m */; };
 		D9BD4F9D22FA9CA300B280C9 /* WorldWeatherDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD4F9C22FA9CA300B280C9 /* WorldWeatherDemoUITests.m */; };
-		D9E9811622FADC5500E46D37 /* DetailedWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9811422FADC5500E46D37 /* DetailedWeather.m */; };
-		D9E9811722FADC5500E46D37 /* DetailedWeatherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9811522FADC5500E46D37 /* DetailedWeatherVC.xib */; };
+		D9E62CFB22FE900000B65CC6 /* CountriesListAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E62CFA22FE900000B65CC6 /* CountriesListAssembler.m */; };
+		D9E62D0022FE991700B65CC6 /* DetailedWeatherAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E62CFF22FE991700B65CC6 /* DetailedWeatherAssembler.m */; };
+		D9E62D0322FE994D00B65CC6 /* ModuleAssemblerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E62D0222FE994D00B65CC6 /* ModuleAssemblerFactory.m */; };
+		D9E62D0522FE9CC400B65CC6 /* CountriesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E62D0422FE9CC400B65CC6 /* CountriesList.xib */; };
+		D9E62D0D22FE9F6000B65CC6 /* DefaultRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E62D0C22FE9F6000B65CC6 /* DefaultRouter.m */; };
+		D9E9811622FADC5500E46D37 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9811422FADC5500E46D37 /* DetailedWeatherViewController.m */; };
+		D9E9811722FADC5500E46D37 /* DetailedWeather.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E9811522FADC5500E46D37 /* DetailedWeather.xib */; };
 		D9E9811A22FADCD600E46D37 /* DetailedWeatherPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9811922FADCD600E46D37 /* DetailedWeatherPresenter.m */; };
 /* End PBXBuildFile section */
 
@@ -45,12 +50,11 @@
 		6E213CDE254B396592614C92 /* Pods-WorldWeatherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldWeatherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldWeatherDemo/Pods-WorldWeatherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		72105640C09B497B0917ABB2 /* Pods-WorldWeatherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldWeatherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldWeatherDemo/Pods-WorldWeatherDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C269AE794428F76BC97F40B7 /* libPods-WorldWeatherDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorldWeatherDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D957885822FAA39200BCC0EE /* CountriesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CountriesList.h; path = WorldWeatherDemo/CountriesList.h; sourceTree = SOURCE_ROOT; };
-		D957885922FAA39200BCC0EE /* CountriesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesList.m; sourceTree = "<group>"; };
+		D957885822FAA39200BCC0EE /* CountriesListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CountriesListTableViewController.h; path = WorldWeatherDemo/CountriesListTableViewController.h; sourceTree = SOURCE_ROOT; };
+		D957885922FAA39200BCC0EE /* CountriesListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesListTableViewController.m; sourceTree = "<group>"; };
 		D957885C22FAAB1700BCC0EE /* CountriesListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesListPresenter.h; sourceTree = "<group>"; };
 		D957885D22FAAB1700BCC0EE /* CountriesListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesListPresenter.m; sourceTree = "<group>"; };
 		D957885F22FAABAE00BCC0EE /* CountriesListUIOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesListUIOutput.h; sourceTree = "<group>"; };
-		D957886022FAAF0200BCC0EE /* CountriesListInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesListInterface.h; sourceTree = "<group>"; };
 		D957886122FAB0D000BCC0EE /* ModuleAssembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAssembler.h; sourceTree = "<group>"; };
 		D995EDA222FAB223003FA6DD /* DefaultAssembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultAssembler.h; sourceTree = "<group>"; };
 		D995EDA322FAB223003FA6DD /* DefaultAssembler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DefaultAssembler.m; path = WorldWeatherDemo/Classes/DefaultAssembler.m; sourceTree = SOURCE_ROOT; };
@@ -69,15 +73,25 @@
 		D9BD4F9822FA9CA300B280C9 /* WorldWeatherDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldWeatherDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BD4F9C22FA9CA300B280C9 /* WorldWeatherDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldWeatherDemoUITests.m; sourceTree = "<group>"; };
 		D9BD4F9E22FA9CA300B280C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9E9811322FADC5500E46D37 /* DetailedWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeather.h; sourceTree = "<group>"; };
-		D9E9811422FADC5500E46D37 /* DetailedWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedWeather.m; sourceTree = "<group>"; };
-		D9E9811522FADC5500E46D37 /* DetailedWeatherVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedWeatherVC.xib; sourceTree = "<group>"; };
+		D9E62CF522FE88A800B65CC6 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D9E62CF822FE8E1100B65CC6 /* WorldWeatherDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldWeatherDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D9E62CF922FE900000B65CC6 /* CountriesListAssembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesListAssembler.h; sourceTree = "<group>"; };
+		D9E62CFA22FE900000B65CC6 /* CountriesListAssembler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesListAssembler.m; sourceTree = "<group>"; };
+		D9E62CFC22FE956200B65CC6 /* ModuleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDelegate.h; sourceTree = "<group>"; };
+		D9E62CFE22FE991700B65CC6 /* DetailedWeatherAssembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherAssembler.h; sourceTree = "<group>"; };
+		D9E62CFF22FE991700B65CC6 /* DetailedWeatherAssembler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherAssembler.m; sourceTree = "<group>"; };
+		D9E62D0122FE994D00B65CC6 /* ModuleAssemblerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAssemblerFactory.h; sourceTree = "<group>"; };
+		D9E62D0222FE994D00B65CC6 /* ModuleAssemblerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleAssemblerFactory.m; sourceTree = "<group>"; };
+		D9E62D0422FE9CC400B65CC6 /* CountriesList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesList.xib; sourceTree = "<group>"; };
+		D9E62D0B22FE9F6000B65CC6 /* DefaultRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRouter.h; sourceTree = "<group>"; };
+		D9E62D0C22FE9F6000B65CC6 /* DefaultRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRouter.m; sourceTree = "<group>"; };
+		D9E9811322FADC5500E46D37 /* DetailedWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherViewController.h; sourceTree = "<group>"; };
+		D9E9811422FADC5500E46D37 /* DetailedWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherViewController.m; sourceTree = "<group>"; };
+		D9E9811522FADC5500E46D37 /* DetailedWeather.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedWeather.xib; sourceTree = "<group>"; };
 		D9E9811822FADCD600E46D37 /* DetailedWeatherPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherPresenter.h; sourceTree = "<group>"; };
 		D9E9811922FADCD600E46D37 /* DetailedWeatherPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherPresenter.m; sourceTree = "<group>"; };
 		D9E9811B22FADD2900E46D37 /* DetailedWeatherOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherOutput.h; sourceTree = "<group>"; };
-		D9E9811C22FADD3900E46D37 /* DetailedWeatherInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherInterface.h; sourceTree = "<group>"; };
-		D9E9811D22FADDDE00E46D37 /* ModuleOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleOutput.h; sourceTree = "<group>"; };
-		D9E9811E22FADDE900E46D37 /* ModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleInterface.h; sourceTree = "<group>"; };
+		D9E9811D22FADDDE00E46D37 /* InterfaceOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceOutput.h; sourceTree = "<group>"; };
 		D9E9811F22FAE7ED00E46D37 /* DetailedWeatherDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +170,8 @@
 				D9BD4F8622FA9CA300B280C9 /* Info.plist */,
 				D9BD4F8722FA9CA300B280C9 /* main.m */,
 				D9BD4F7E22FA9CA000B280C9 /* WorldWeatherDemo.xcdatamodeld */,
+				D9E62CF822FE8E1100B65CC6 /* WorldWeatherDemo-Prefix.pch */,
+				D9E62CF522FE88A800B65CC6 /* Constants.h */,
 			);
 			path = WorldWeatherDemo;
 			sourceTree = "<group>";
@@ -183,6 +199,8 @@
 			children = (
 				D9E9812422FAED5300E46D37 /* Interface */,
 				D9E9812222FAED5100E46D37 /* Presenter */,
+				D9E62CF922FE900000B65CC6 /* CountriesListAssembler.h */,
+				D9E62CFA22FE900000B65CC6 /* CountriesListAssembler.m */,
 			);
 			name = CountriesList;
 			path = ..;
@@ -193,6 +211,8 @@
 			children = (
 				D9E9812022FAED3800E46D37 /* Interface */,
 				D9E9812122FAED3E00E46D37 /* Presenter */,
+				D9E62CFE22FE991700B65CC6 /* DetailedWeatherAssembler.h */,
+				D9E62CFF22FE991700B65CC6 /* DetailedWeatherAssembler.m */,
 			);
 			name = DetailedWeather;
 			path = ..;
@@ -201,10 +221,9 @@
 		D9E9812022FAED3800E46D37 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				D9E9811C22FADD3900E46D37 /* DetailedWeatherInterface.h */,
-				D9E9811322FADC5500E46D37 /* DetailedWeather.h */,
-				D9E9811422FADC5500E46D37 /* DetailedWeather.m */,
-				D9E9811522FADC5500E46D37 /* DetailedWeatherVC.xib */,
+				D9E9811322FADC5500E46D37 /* DetailedWeatherViewController.h */,
+				D9E9811422FADC5500E46D37 /* DetailedWeatherViewController.m */,
+				D9E9811522FADC5500E46D37 /* DetailedWeather.xib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -233,9 +252,9 @@
 		D9E9812422FAED5300E46D37 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				D957886022FAAF0200BCC0EE /* CountriesListInterface.h */,
-				D957885822FAA39200BCC0EE /* CountriesList.h */,
-				D957885922FAA39200BCC0EE /* CountriesList.m */,
+				D9E62D0422FE9CC400B65CC6 /* CountriesList.xib */,
+				D957885822FAA39200BCC0EE /* CountriesListTableViewController.h */,
+				D957885922FAA39200BCC0EE /* CountriesListTableViewController.m */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -248,7 +267,11 @@
 				D957886122FAB0D000BCC0EE /* ModuleAssembler.h */,
 				D995EDA222FAB223003FA6DD /* DefaultAssembler.h */,
 				D995EDA322FAB223003FA6DD /* DefaultAssembler.m */,
+				D9E62D0122FE994D00B65CC6 /* ModuleAssemblerFactory.h */,
+				D9E62D0222FE994D00B65CC6 /* ModuleAssemblerFactory.m */,
 				D9E9812822FAEE5400E46D37 /* Modules */,
+				D9E62D0B22FE9F6000B65CC6 /* DefaultRouter.h */,
+				D9E62D0C22FE9F6000B65CC6 /* DefaultRouter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -256,9 +279,9 @@
 		D9E9812822FAEE5400E46D37 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D9E62CFC22FE956200B65CC6 /* ModuleDelegate.h */,
+				D9E9811D22FADDDE00E46D37 /* InterfaceOutput.h */,
 				D9E9811122FADBC700E46D37 /* CountriesList */,
-				D9E9811D22FADDDE00E46D37 /* ModuleOutput.h */,
-				D9E9811E22FADDE900E46D37 /* ModuleInterface.h */,
 				D9E9811222FADBDF00E46D37 /* DetailedWeather */,
 			);
 			name = Modules;
@@ -373,7 +396,8 @@
 				D9BD4F8522FA9CA300B280C9 /* LaunchScreen.storyboard in Resources */,
 				D9BD4F8222FA9CA300B280C9 /* Assets.xcassets in Resources */,
 				D9BD4F7D22FA9CA000B280C9 /* Main.storyboard in Resources */,
-				D9E9811722FADC5500E46D37 /* DetailedWeatherVC.xib in Resources */,
+				D9E9811722FADC5500E46D37 /* DetailedWeather.xib in Resources */,
+				D9E62D0522FE9CC400B65CC6 /* CountriesList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,12 +475,16 @@
 			files = (
 				D995EDA422FAB223003FA6DD /* DefaultAssembler.m in Sources */,
 				D9E9811A22FADCD600E46D37 /* DetailedWeatherPresenter.m in Sources */,
+				D9E62CFB22FE900000B65CC6 /* CountriesListAssembler.m in Sources */,
+				D9E62D0022FE991700B65CC6 /* DetailedWeatherAssembler.m in Sources */,
+				D9E62D0D22FE9F6000B65CC6 /* DefaultRouter.m in Sources */,
 				D957885E22FAAB1700BCC0EE /* CountriesListPresenter.m in Sources */,
 				D9BD4F8022FA9CA000B280C9 /* WorldWeatherDemo.xcdatamodeld in Sources */,
 				D9BD4F8822FA9CA300B280C9 /* main.m in Sources */,
 				D9BD4F7722FA9CA000B280C9 /* AppDelegate.m in Sources */,
-				D9E9811622FADC5500E46D37 /* DetailedWeather.m in Sources */,
-				D957885A22FAA39200BCC0EE /* CountriesList.m in Sources */,
+				D9E9811622FADC5500E46D37 /* DetailedWeatherViewController.m in Sources */,
+				D957885A22FAA39200BCC0EE /* CountriesListTableViewController.m in Sources */,
+				D9E62D0322FE994D00B65CC6 /* ModuleAssemblerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +580,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldWeatherDemo/WorldWeatherDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -568,6 +597,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/WorldWeatherDemo\"/**";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -610,6 +640,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldWeatherDemo/WorldWeatherDemo-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -621,6 +652,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/WorldWeatherDemo\"/**";
+				USE_HEADERMAP = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

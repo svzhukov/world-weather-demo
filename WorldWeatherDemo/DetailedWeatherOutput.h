@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ModuleOutput.h"
+#import "InterfaceOutput.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DetailedWeatherOutput <NSObject, ModuleOutput>
+@protocol DetailedWeatherOutput <NSObject, InterfaceOutput>
 
 @end
 
