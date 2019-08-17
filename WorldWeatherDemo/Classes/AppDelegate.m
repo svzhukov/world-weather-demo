@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "DefaultAssembler.h"
+#import "AbstractAssembler.h"
+#import "BaseRouter.h"
 
 @interface AppDelegate ()
 
@@ -15,14 +16,17 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    AbstractAssembler *assembler = [AbstractAssembler defaultAssembler];
+    BaseRouter *router = [assembler assembleInitialModule];
+    [router presentInitialControllerWithWindow:self.window];
     
-    DefaultAssembler *assembler = [DefaultAssembler new];
-    [assembler assembleInitialModule];
-    
-    // Override point for customization after application launch.
     return YES;
+}
+
+- (void)rootViewDidLoad {
+
 }
 
 
@@ -54,6 +58,17 @@
     [self saveContext];
 }
 
+#pragma mark - Custom
+- (UIWindow *)window {
+    if (_window) {
+        return _window;
+    }
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window makeKeyAndVisible];
+    
+    return _window;
+}
 
 #pragma mark - Core Data stack
 

@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DetailedWeatherDelegate.h"
-#import "DetailedWeatherOutput.h"
-#import "DetailedWeatherViewController.h"
+#import "BaseRouter.h"
+#import "ModuleDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ModuleAssembler <NSObject>
 
-- (void)assembleAsInitialModule
-- (void)assembleDetailedWeatherWithDelegate:(id<DetailedWeatherDelegate>)delegate completion:(void (^)(DetailedWeatherViewController *))completion;
+- (BaseRouter *)assembleWithObjectId:(nullable NSString *)objectId
+                            delegate:(nullable id<ModuleDelegate>)delegate;
+
+@optional
+- (BaseRouter *)assembleAsInitialModule;
 
 @end
 
